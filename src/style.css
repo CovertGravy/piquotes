@@ -54,6 +54,7 @@ main h2,
 .create-body header {
   display: grid;
   place-items: center;
+  height: 100px;
 }
 
 .create-body header h4 {
@@ -73,4 +74,26 @@ main a {
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 3px;
   cursor: pointer;
+}
+
+.create-body .container {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  gap: 1rem;
+}
+
+.create-body .container .controls {
+  display: grid;
+  place-items: center;
+}
+
+.create-body .container .artboard {
+  min-width: 320px;
+  max-width: 480px;
+  width: 80vw;
+  min-height: 240px;
+  max-height: 360px;
+  height: 60vw;
+  background-color: #000000;
 }

@@ -10,5 +10,20 @@
     <header>
       <h4>piquote</h4>
     </header>
+    <div class="container">
+      <div class="artboard"></div>
+      <div class="controls">
+        <div class="bg-color">
+          <label for="bgColor">Background Color</label>
+          <input
+            type="color"
+            name="bgColor"
+            id="bgColor"
+            oninput="updateArtBoardBgColor(event)"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
   </body>
 </html>
