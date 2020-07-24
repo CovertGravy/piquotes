@@ -10,19 +10,40 @@
     <header>
       <h4>piquote</h4>
     </header>
-    <div class="container">
-      <div class="artboard"></div>
+    <div class="container" id="app">
+      <div class="artboard" :style="artboardStyle"></div>
+      <div class="bg-type">
+        <label>Select Background Type: </label>
+        <input
+          type="radio"
+          id="bg-type-bgColor"
+          value="Color"
+          v-model="bgType"
+        />
+        <label for="bg-type-bgColor">Color</label>
+
+        <input
+          type="radio"
+          id="bg-type-bgGradient"
+          value="Gradient"
+          v-model="bgType"
+        />
+        <label for="bg-type-bgGradient">Gradient</label>
+
+        <input
+          type="radio"
+          id="bg-type-bgImage"
+          value="Image"
+          v-model="bgType"
+        />
+        <label for="bg-type-bgImage">Image</label>
+      </div>
       <div class="controls">
-        <div class="bg-color">
+        <div class="bg-color" v-if="bgType === 'Color'">
           <label for="bgColor">Background Color</label>
-          <input
-            type="color"
-            name="bgColor"
-            id="bgColor"
-            oninput="updateArtBoardBgColor(event)"
-          />
+          <input type="color" name="bgColor" id="bgColor" v-model="bgColor" />
         </div>
-        <div class="bg-gradient">
+        <div class="bg-gradient" v-if="bgType === 'Gradient'">
           <label for="bgGradient1">Background Color</label>
           <input
             type="color"
@@ -32,7 +53,9 @@
           />
         </div>
       </div>
+      {{bgColor}}
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>
