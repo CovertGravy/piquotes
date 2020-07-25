@@ -44,12 +44,20 @@
           <input type="color" name="bgColor" id="bgColor" v-model="bgColor" />
         </div>
         <div class="bg-gradient" v-if="bgType === 'Gradient'">
-          <label for="bgGradient1">Background Color</label>
+          <label for="bgGradient1">Gradient Color 1</label>
           <input
             type="color"
             name="bgGradient1"
             id="bgGradient1"
-            oninput="updateArtBoardBgGradient(event)"
+            v-model="bgGradient1"
+          />
+
+          <label for="bgGradient2">Gradient Color 2</label>
+          <input
+            type="color"
+            name="bgGradient2"
+            id="bgGradient2"
+            v-model="bgGradient2"
           />
         </div>
       </div>
