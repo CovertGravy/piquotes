@@ -5,7 +5,7 @@ var app = new Vue({
     bgColor: "#000000",
     bgGradient1: "#ff0000",
     bgGradient2: "#0000ff",
-    bgGradientDeg: "45deg",
+    bgGradientDeg: 45,
   },
   computed: {
     artboardStyle: function () {
@@ -17,7 +17,7 @@ var app = new Vue({
     },
     artboardBgGradient: function () {
       return {
-        backgroundImage: `linear-gradient(${this.bgGradientDeg},${this.bgGradient1}, ${this.bgGradient2})`,
+        backgroundImage: `linear-gradient(${this.bgGradientDeg}deg,${this.bgGradient1}, ${this.bgGradient2})`,
       };
     },
   },
