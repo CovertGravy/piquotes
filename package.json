@@ -1,0 +1,22 @@
+{
+  "name": "piquote",
+  "version": "1.0.0",
+  "description": "A picture, A quote",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CovertGravy/piquotes.git"
+  },
+  "author": "Ashish Shaji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CovertGravy/piquotes/issues"
+  },
+  "homepage": "https://github.com/CovertGravy/piquotes#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
